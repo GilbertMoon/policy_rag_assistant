@@ -1,0 +1,5 @@
+google-generativeai
+mysql-connector-python
+scikit-learn
+pandas
+python-dotenv
