@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">왜 RAG가 필요할까요? RAG 사용 전과 사용 후 비교</title>
+  <desc id="desc">서울시 공영주차장 요금 질문을 예시로 최신성, 정확성, 근거 제시 관점에서 RAG 사용 전과 후를 비교하는 교육용 인포그래픽</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fbff"/>
+      <stop offset="100%" stop-color="#eef5ff"/>
+    </linearGradient>
+    <linearGradient id="leftHead" x1="0" x2="1">
+      <stop offset="0%" stop-color="#c93b45"/>
+      <stop offset="100%" stop-color="#e75b5e"/>
+    </linearGradient>
+    <linearGradient id="rightHead" x1="0" x2="1">
+      <stop offset="0%" stop-color="#158553"/>
+      <stop offset="100%" stop-color="#2aaa67"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8092a8"/>
+    </marker>
+    <style>
+      .font { font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif; }
+      .title { font-size: 52px; font-weight: 800; fill: #10213f; }
+      .sub { font-size: 24px; font-weight: 600; fill: #52647b; }
+      .panelTitle { font-size: 34px; font-weight: 800; fill: #ffffff; }
+      .h2 { font-size: 24px; font-weight: 800; fill: #1d2b44; }
+      .body { font-size: 20px; font-weight: 600; fill: #25334a; }
+      .small { font-size: 17px; font-weight: 500; fill: #52647b; }
+      .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; font-size: 16px; fill: #1e3a5f; }
+      .badge { font-size: 17px; font-weight: 800; fill: #ffffff; }
+      .num { font-size: 21px; font-weight: 800; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1440" height="900" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text class="font title" x="720" y="76" text-anchor="middle">왜 <tspan fill="#1769e0">RAG</tspan>가 필요할까요?</text>
+  <text class="font sub" x="720" y="118" text-anchor="middle">최신성과 정확성을 높이고, 근거까지 함께 답하기 위해 필요합니다</text>
+
+  <!-- Left panel -->
+  <rect x="38" y="150" width="660" height="610" rx="28" fill="#fff8f8" stroke="#f0a5a9" stroke-width="2"/>
+  <rect x="58" y="168" width="620" height="72" rx="18" fill="url(#leftHead)"/>
+  <text class="font panelTitle" x="368" y="216" text-anchor="middle">RAG 사용 전</text>
+
+  <!-- Left question -->
+  <rect x="78" y="270" width="250" height="112" rx="18" fill="#ffffff" stroke="#9fb5d3" stroke-width="2"/>
+  <text class="font body" x="98" y="304">
+    <tspan x="98" dy="0">서울시 공영주차장 1급지</tspan>
+    <tspan x="98" dy="29">노상주차장 요금은 5분에</tspan>
+    <tspan x="98" dy="29">얼마인가요?</tspan>
+  </text>
+  <rect x="136" y="394" width="134" height="38" rx="19" fill="#f7d7da"/>
+  <text class="font body" x="203" y="420" text-anchor="middle" fill="#a82c37">질문</text>
+
+  <!-- Left AI -->
+  <line x1="338" y1="330" x2="398" y2="330" stroke="#8092a8" stroke-width="5" marker-end="url(#arrow)"/>
+  <circle cx="472" cy="326" r="56" fill="#e7edf5" stroke="#8fa4bf" stroke-width="3"/>
+  <rect x="436" y="302" width="72" height="50" rx="18" fill="#263b59"/>
+  <circle cx="458" cy="327" r="6" fill="#68d6ff"/>
+  <circle cx="486" cy="327" r="6" fill="#68d6ff"/>
+  <line x1="472" y1="270" x2="472" y2="287" stroke="#52749b" stroke-width="4"/>
+  <circle cx="472" cy="265" r="6" fill="#2c73e8"/>
+  <rect x="390" y="394" width="166" height="58" rx="16" fill="#e6edf6"/>
+  <text class="font body" x="473" y="418" text-anchor="middle">
+    <tspan x="473" dy="0">LLM이 기억만으로</tspan>
+    <tspan x="473" dy="25">답변</tspan>
+  </text>
+
+  <!-- Left answer -->
+  <line x1="536" y1="330" x2="586" y2="330" stroke="#8092a8" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="586" y="286" width="92" height="88" rx="18" fill="#ffffff" stroke="#9fb5d3" stroke-width="2"/>
+  <text class="font h2" x="632" y="340" text-anchor="middle">500원</text>
+  <text class="font small" x="632" y="363" text-anchor="middle">입니다.</text>
+
+  <!-- Left risk boxes -->
+  <rect x="78" y="480" width="580" height="170" rx="20" fill="#fff0f0" stroke="#f3b3b7"/>
+  <circle cx="118" cy="525" r="23" fill="#d83f4a"/>
+  <text class="font num" x="118" y="533" text-anchor="middle">!</text>
+  <text class="font h2" x="156" y="520">케이스 1 · 최신성 문제</text>
+  <text class="font small" x="156" y="548">
+    <tspan x="156" dy="0">조례가 개정되면 모델의 기억은 예전 정보일 수 있습니다.</tspan>
+  </text>
+  <line x1="98" y1="570" x2="638" y2="570" stroke="#efc4c7"/>
+  <text class="font h2" x="98" y="604">케이스 2 · 정확성/근거 문제</text>
+  <text class="font small" x="98" y="634">
+    <tspan x="98" dy="0">답은 그럴듯해도 왜 500원인지, 어디에 적혀 있는지</tspan>
+    <tspan x="98" dy="24">바로 검증하기 어렵습니다.</tspan>
+  </text>
+
+  <rect x="78" y="680" width="580" height="58" rx="14" fill="#f9dfe1"/>
+  <text class="font body" x="368" y="716" text-anchor="middle" fill="#a82c37">문제: 최신성 · 정확성 · 근거성을 보장하기 어렵다</text>
+
+  <!-- Right panel -->
+  <rect x="742" y="150" width="660" height="610" rx="28" fill="#f6fff9" stroke="#99d8b4" stroke-width="2"/>
+  <rect x="762" y="168" width="620" height="72" rx="18" fill="url(#rightHead)"/>
+  <text class="font panelTitle" x="1072" y="216" text-anchor="middle">RAG 사용 후</text>
+
+  <!-- Right flow -->
+  <rect x="772" y="270" width="205" height="92" rx="18" fill="#ffffff" stroke="#9fb5d3" stroke-width="2"/>
+  <text class="font small" x="790" y="300">
+    <tspan x="790" dy="0">서울시 공영주차장 1급지</tspan>
+    <tspan x="790" dy="24">노상주차장 요금은 5분에</tspan>
+    <tspan x="790" dy="24">얼마인가요?</tspan>
+  </text>
+  <text class="font body" x="874" y="390" text-anchor="middle" fill="#1769e0">질문</text>
+
+  <line x1="984" y1="320" x2="1022" y2="320" stroke="#8092a8" stroke-width="4" marker-end="url(#arrow)"/>
+  <!-- search icon -->
+  <rect x="1030" y="279" width="70" height="82" rx="8" fill="#eaf2ff" stroke="#7ca5df" stroke-width="2"/>
+  <line x1="1046" y1="298" x2="1085" y2="298" stroke="#7ca5df" stroke-width="3"/>
+  <line x1="1046" y1="314" x2="1080" y2="314" stroke="#7ca5df" stroke-width="3"/>
+  <circle cx="1092" cy="346" r="18" fill="none" stroke="#1769e0" stroke-width="5"/>
+  <line x1="1105" y1="359" x2="1121" y2="375" stroke="#1769e0" stroke-width="5"/>
+  <text class="font small" x="1072" y="398" text-anchor="middle">관련 문서 검색</text>
+
+  <line x1="1126" y1="320" x2="1160" y2="320" stroke="#8092a8" stroke-width="4" marker-end="url(#arrow)"/>
+  <rect x="1166" y="279" width="70" height="82" rx="8" fill="#edfff4" stroke="#70c797" stroke-width="2"/>
+  <path d="M1183 328 l14 14 l25 -30" fill="none" stroke="#199d5b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="font small" x="1201" y="398" text-anchor="middle">근거 확인</text>
+
+  <line x1="1240" y1="320" x2="1270" y2="320" stroke="#8092a8" stroke-width="4" marker-end="url(#arrow)"/>
+  <circle cx="1314" cy="320" r="42" fill="#e7edf5" stroke="#8fa4bf" stroke-width="2"/>
+  <rect x="1288" y="302" width="52" height="38" rx="13" fill="#263b59"/>
+  <circle cx="1303" cy="321" r="5" fill="#68d6ff"/>
+  <circle cx="1324" cy="321" r="5" fill="#68d6ff"/>
+  <text class="font small" x="1314" y="390" text-anchor="middle">근거 기반 답변</text>
+
+  <!-- JSON result -->
+  <rect x="772" y="430" width="590" height="138" rx="18" fill="#ffffff" stroke="#93afd0" stroke-width="2"/>
+  <text class="code" x="794" y="458">{</text>
+  <text class="code" x="814" y="482"><tspan fill="#1769e0">"answer"</tspan>: "5분당 500원입니다.",</text>
+  <text class="code" x="814" y="506"><tspan fill="#1769e0">"citation"</tspan>: ["서울특별시 주차장 설치 및 관리 조례 별표 1"],</text>
+  <text class="code" x="814" y="530"><tspan fill="#1769e0">"source_url"</tspan>: "...",</text>
+  <text class="code" x="814" y="554"><tspan fill="#1769e0">"effective_date"</tspan>: "2026-10-01"</text>
+  <text class="code" x="794" y="576">}</text>
+
+  <rect x="772" y="590" width="590" height="96" rx="18" fill="#e9f9ef" stroke="#9ad7b4"/>
+  <circle cx="810" cy="638" r="24" fill="#199d5b"/>
+  <path d="M798 638 l8 9 l16 -20" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="font small" x="850" y="620">
+    <tspan x="850" dy="0">• 질문할 때 실제 문서를 검색해 최신 정보를 반영</tspan>
+    <tspan x="850" dy="27">• 조문·링크·시행일을 함께 제시해 검증 가능</tspan>
+    <tspan x="850" dy="27">• 근거가 없으면 “확인 불가”로 답변</tspan>
+  </text>
+  <rect x="772" y="700" width="590" height="38" rx="12" fill="#d8f2e2"/>
+  <text class="font body" x="1067" y="726" text-anchor="middle" fill="#147946">효과: 최신성 · 정확성 · 근거성을 함께 확보</text>
+
+  <!-- Bottom principles -->
+  <rect x="38" y="786" width="1364" height="88" rx="20" fill="#1f5fae"/>
+  <text class="font h2" x="80" y="820" fill="#ffffff">오늘 꼭 기억할 3가지</text>
+
+  <circle cx="342" cy="833" r="23" fill="#ffffff"/>
+  <text class="font body" x="342" y="840" text-anchor="middle" fill="#1769e0">1</text>
+  <text class="font body" x="378" y="840" fill="#ffffff">문서를 정확하게 읽는다</text>
+
+  <circle cx="704" cy="833" r="23" fill="#ffffff"/>
+  <text class="font body" x="704" y="840" text-anchor="middle" fill="#1769e0">2</text>
+  <text class="font body" x="740" y="840" fill="#ffffff">질문과 관련 있는 근거를 먼저 찾는다</text>
+
+  <circle cx="1096" cy="833" r="23" fill="#ffffff"/>
+  <text class="font body" x="1096" y="840" text-anchor="middle" fill="#1769e0">3</text>
+  <text class="font body" x="1132" y="828" fill="#ffffff">
+    <tspan x="1132" dy="0">근거가 없으면 지어내지 않고</tspan>
+    <tspan x="1132" dy="24">“확인 불가”라고 답한다</tspan>
+  </text>
+</svg>
