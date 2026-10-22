@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<rect width="1440" height="900" fill="#f7faff"/>
+<rect x="0" y="0" width="1440" height="18" fill="#1769e0"/>
+<text x="720" y="78" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="50" font-weight="800" fill="#10213f" text-anchor="middle"><tspan x="720" dy="0">Upstage Studio에서 먼저 문서를 읽어봅니다</tspan></text>
+<text x="720" y="122" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="23" font-weight="600" fill="#5a6b81" text-anchor="middle"><tspan x="720" dy="0">코드를 실행하기 전에 Parse → Extract 흐름을 직접 확인합니다</tspan></text>
+<rect x="80" y="200" width="350" height="430" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="80" y="200" width="350" height="58" rx="24" fill="#1769e0"/>
+<text x="255" y="239" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="255" dy="0">입력</tspan></text>
+<text x="108" y="296" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="108" dy="0">HWP 또는 PDF</tspan><tspan x="108" dy="32">별표 문서 업로드</tspan><tspan x="108" dy="32"></tspan><tspan x="108" dy="32">예:</tspan><tspan x="108" dy="32">공영주차장</tspan><tspan x="108" dy="32">주차요금표</tspan></text><line x1="450" y1="415" x2="525" y2="415" stroke="#7f93aa" stroke-width="5"/>
+<polygon points="525,415 509,405 509,425" fill="#7f93aa"/><rect x="545" y="200" width="350" height="430" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="545" y="200" width="350" height="58" rx="24" fill="#0f8ca8"/>
+<text x="720" y="239" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="720" dy="0">Parse</tspan></text>
+<text x="573" y="296" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="573" dy="0">문서 구조 읽기</tspan><tspan x="573" dy="32">표의 행·열 복원</tspan><tspan x="573" dy="32">Markdown / HTML</tspan><tspan x="573" dy="32"></tspan><tspan x="573" dy="32">문서를</tspan><tspan x="573" dy="32">읽는 단계</tspan></text><line x1="915" y1="415" x2="990" y2="415" stroke="#7f93aa" stroke-width="5"/>
+<polygon points="990,415 974,405 974,425" fill="#7f93aa"/><rect x="1010" y="200" width="350" height="430" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="1010" y="200" width="350" height="58" rx="24" fill="#158553"/>
+<text x="1185" y="239" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="1185" dy="0">Extract</tspan></text>
+<text x="1038" y="296" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="1038" dy="0">필요한 값 추출</tspan><tspan x="1038" dy="32">3개 급지 × 6개 값</tspan><tspan x="1038" dy="32">= 18개 값</tspan><tspan x="1038" dy="32"></tspan><tspan x="1038" dy="32">필요한 정보만</tspan><tspan x="1038" dy="32">구조화</tspan></text><rect x="220" y="690" width="1000" height="92" rx="22" fill="#edf8f2"/>
+  <text x="720" y="748" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#147946" text-anchor="middle"><tspan x="720" dy="0">핵심: Studio에서는 ‘문서를 어떻게 읽고, 무엇을 뽑을지’를 눈으로 확인합니다.</tspan></text>
+</svg>
