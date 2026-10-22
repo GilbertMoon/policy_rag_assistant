@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<rect width="1440" height="900" fill="#f7faff"/>
+<rect x="0" y="0" width="1440" height="18" fill="#1769e0"/>
+<text x="720" y="78" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="50" font-weight="800" fill="#10213f" text-anchor="middle"><tspan x="720" dy="0">Starter Kit 폴더 구조</tspan></text>
+<text x="720" y="122" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="23" font-weight="600" fill="#5a6b81" text-anchor="middle"><tspan x="720" dy="0">실습에서 자주 사용하는 파일과 역할을 한눈에 봅니다</tspan></text>
+<rect x="80" y="180" width="600" height="590" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="80" y="180" width="600" height="58" rx="24" fill="#1769e0"/>
+<text x="380" y="219" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="380" dy="0">파일 구조</tspan></text>
+<text x="108" y="276" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="108" dy="0">starter-kit/</tspan><tspan x="108" dy="32">├─ .env / .env.example</tspan><tspan x="108" dy="32">├─ fetch_ordinances.py</tspan><tspan x="108" dy="32">├─ parse_annex.py</tspan><tspan x="108" dy="32">├─ build_index.py</tspan><tspan x="108" dy="32">├─ rag.py</tspan><tspan x="108" dy="32">├─ app.py</tspan><tspan x="108" dy="32">├─ check.py</tspan><tspan x="108" dy="32">├─ upstage.py</tspan><tspan x="108" dy="32">└─ data/ · results/</tspan></text><rect x="760" y="180" width="600" height="590" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="760" y="180" width="600" height="58" rx="24" fill="#158553"/>
+<text x="1060" y="219" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="1060" dy="0">핵심 역할</tspan></text>
+<text x="788" y="276" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="788" dy="0">fetch_ordinances.py → 조례 수집</tspan><tspan x="788" dy="32">parse_annex.py → 별표 구조 복원</tspan><tspan x="788" dy="32">build_index.py → Chunk + Embedding</tspan><tspan x="788" dy="32">rag.py → 검색 + Solar + 검증</tspan><tspan x="788" dy="32">app.py → POST /ask API</tspan><tspan x="788" dy="32">check.py → 셀프 채점</tspan><tspan x="788" dy="32">upstage.py → Upstage API 호출 모음</tspan></text>
+</svg>
