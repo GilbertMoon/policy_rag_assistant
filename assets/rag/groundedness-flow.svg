@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<rect width="1440" height="900" fill="#f7faff"/>
+<rect x="0" y="0" width="1440" height="18" fill="#1769e0"/>
+<text x="720" y="78" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="50" font-weight="800" fill="#10213f" text-anchor="middle"><tspan x="720" dy="0">Solar Decide 기반 Groundedness 검증</tspan></text>
+<text x="720" y="122" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="23" font-weight="600" fill="#5a6b81" text-anchor="middle"><tspan x="720" dy="0">생성된 답변이 제공된 근거 안에 실제로 있는지 한 번 더 확인합니다</tspan></text>
+<rect x="80" y="220" width="350" height="390" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="80" y="220" width="350" height="58" rx="24" fill="#1769e0"/>
+<text x="255" y="259" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="255" dy="0">입력</tspan></text>
+<text x="108" y="316" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="108" dy="0">context</tspan><tspan x="108" dy="32">검색된 조례 근거</tspan><tspan x="108" dy="32"></tspan><tspan x="108" dy="32">answer</tspan><tspan x="108" dy="32">Solar가 만든 답변</tspan></text><line x1="450" y1="410" x2="540" y2="410" stroke="#7f93aa" stroke-width="5"/>
+<polygon points="540,410 524,400 524,420" fill="#7f93aa"/><rect x="560" y="190" width="350" height="450" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="560" y="190" width="350" height="58" rx="24" fill="#8a5bd5"/>
+<text x="735" y="229" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="735" dy="0">Solar Decide</tspan></text>
+<text x="588" y="286" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="588" dy="0">POST /v1/systemone</tspan><tspan x="588" dy="32">model: solar-decide</tspan><tspan x="588" dy="32"></tspan><tspan x="588" dy="32">질문:</tspan><tspan x="588" dy="32">“답변이 context에</tspan><tspan x="588" dy="32">충분히 근거하는가?”</tspan></text><line x1="930" y1="410" x2="1020" y2="410" stroke="#7f93aa" stroke-width="5"/>
+<polygon points="1020,410 1004,400 1004,420" fill="#7f93aa"/><rect x="1040" y="220" width="320" height="390" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="1040" y="220" width="320" height="58" rx="24" fill="#158553"/>
+<text x="1200" y="259" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="1200" dy="0">판정</tspan></text>
+<text x="1068" y="316" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="1068" dy="0">grounded</tspan><tspan x="1068" dy="32">→ 답변 유지</tspan><tspan x="1068" dy="32"></tspan><tspan x="1068" dy="32">notGrounded</tspan><tspan x="1068" dy="32">→ 확인 불가</tspan><tspan x="1068" dy="32"></tspan><tspan x="1068" dy="32">notSure</tspan><tspan x="1068" dy="32">→ 보수적 검토</tspan></text>
+</svg>
