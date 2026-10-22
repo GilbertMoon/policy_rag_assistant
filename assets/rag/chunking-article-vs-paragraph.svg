@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<rect width="1440" height="900" fill="#f7faff"/>
+<rect x="0" y="0" width="1440" height="18" fill="#1769e0"/>
+<text x="720" y="78" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="50" font-weight="800" fill="#10213f" text-anchor="middle"><tspan x="720" dy="0">조 단위 vs 항 단위 Chunk</tspan></text>
+<text x="720" y="122" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="23" font-weight="600" fill="#5a6b81" text-anchor="middle"><tspan x="720" dy="0">근거를 얼마나 세밀하게 나눌지에 따라 검색과 citation 정확도가 달라집니다</tspan></text>
+<rect x="80" y="190" width="590" height="500" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="80" y="190" width="590" height="58" rx="24" fill="#596b82"/>
+<text x="375" y="229" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="375" dy="0">조 단위 Chunk</tspan></text>
+<text x="108" y="286" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="108" dy="0">제7조 전체</tspan><tspan x="108" dy="32"></tspan><tspan x="108" dy="32">① 장애인 감면 …</tspan><tspan x="108" dy="32">② 다른 감면 …</tspan><tspan x="108" dy="32">③ 둘 이상의 감면사유 …</tspan><tspan x="108" dy="32"></tspan><tspan x="108" dy="32">장점: 문맥이 넓음</tspan><tspan x="108" dy="32">단점: 근거가 뭉뚱그려짐</tspan></text><rect x="770" y="190" width="590" height="500" rx="24" fill="#ffffff" stroke="#d7e2f0" stroke-width="2"/>
+<rect x="770" y="190" width="590" height="58" rx="24" fill="#1769e0"/>
+<text x="1065" y="229" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="25" font-weight="800" fill="#fff" text-anchor="middle"><tspan x="1065" dy="0">항 단위 Chunk</tspan></text>
+<text x="798" y="286" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="21" font-weight="600" fill="#25334a" text-anchor="start"><tspan x="798" dy="0">Chunk 1 = 제7조 제1항</tspan><tspan x="798" dy="32">Chunk 2 = 제7조 제2항</tspan><tspan x="798" dy="32">Chunk 3 = 제7조 제3항</tspan><tspan x="798" dy="32"></tspan><tspan x="798" dy="32">장점: citation이 정확함</tspan><tspan x="798" dy="32">검색 결과 해석이 쉬움</tspan><tspan x="798" dy="32"></tspan><tspan x="798" dy="32">이번 실습 기본값: paragraph</tspan></text><rect x="205" y="730" width="1030" height="78" rx="20" fill="#eaf2ff"/>
+  <text x="720" y="780" font-family="Pretendard,Noto Sans KR,Arial,sans-serif" font-size="28" font-weight="800" fill="#174f9e" text-anchor="middle"><tspan x="720" dy="0">이번 기준선: 항 단위 528개 Chunk</tspan></text>
+</svg>
